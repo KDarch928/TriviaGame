@@ -1,0 +1,15 @@
+body {
+    /* background-color: #f2c300; */
+    background-image: url("../images/enterprise.jpg");
+    background-size: 100%;
+}
+
+
+.txt1 {
+    color: #0099f6;
+    margin: 3%;
+}
+
+/* .enterpriseImg {
+    max-width: 60%;
+} */
