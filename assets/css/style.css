@@ -4,12 +4,27 @@ body {
     background-size: 100%;
 }
 
+#submitBtn {
+    margin-top: 10px;
+}
 
 .txt1 {
     color: #0099f6;
     margin: 3%;
 }
 
-/* .enterpriseImg {
-    max-width: 60%;
-} */
+.txt2 {
+    color:#f2c300;
+}
+
+#triviaQuestions {
+    background: white;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+
+}
+
+
