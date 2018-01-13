@@ -1,6 +1,6 @@
 console.log("test");
 
-var answers = ["Gene Roddenberry", "Rummaging through a debris field to salvage junk"];
+var answers = ["Gene Roddenberry", "Rummaging through a debris field to salvage junk", "His Singing", "Enterprise D and the Star Gazer", "Water", "Being able to turn invisible", "Guinan", "Reginald Barclay"];
 var userAnswers = [];
 var win = 0;
 var lose = 0;
