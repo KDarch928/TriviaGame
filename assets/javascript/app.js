@@ -1,17 +1,18 @@
 console.log("test");
 
-var answers = ["Kayle"]
+var answers = ["Gene Roddenberry", "Rummaging through a debris field to salvage junk"];
 var userAnswers = [];
 var win = 0;
 var lose = 0;
 var unanswered = 0;
 var na = "na"
+var arrLength;
 
 
 function checkAnswers() {
     for (var i = 0; i < answers.length; i++) {
-        console.log(answers[i]);
-        console.log(userAnswers[i]);
+        // console.log(answers[i]);
+        // console.log(userAnswers[i]);
         if(answers[i] === userAnswers[i]){
             win++;
         } else if (userAnswers[i] === "na"){
@@ -39,7 +40,7 @@ function addUserAnswerToUserAnswerArray(value) {
 }
 
 $("#startBtn").on("click",function () {
-    console.log(this);
+    // console.log(this);
     $("#startScreen").addClass("invisible");
     $("#triviaQuestions").removeClass("invisible");
 });
@@ -47,10 +48,21 @@ $("#startBtn").on("click",function () {
 $(document).ready(function () {
     $("#submitBtn").click(function() {
 
-        var q1Val = $("input[name=customRadioInline1]:checked").val();
-        addUserAnswerToUserAnswerArray(q1Val);
-        console.log($(this).val());
+        arrLength = answers.length;
+        // var q1Val = $("input[name=num1]:checked").val();
+        // var q2Val = $("input[name=num2]:checked").val();
+
+        for (var i = 0; i < arrLength; i++) {
+            var qVal = $("input[name=num" + (i + 1) + "]:checked").val();
+            addUserAnswerToUserAnswerArray(qVal);
+
+        }
+        // addUserAnswerToUserAnswerArray(q1Val);
+        // addUserAnswerToUserAnswerArray(q2Val);
+        //console.log($(this).val());
         checkAnswers();
 
     });
 });
+console.log(answers);
+console.log(userAnswers);
