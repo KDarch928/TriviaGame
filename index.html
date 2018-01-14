@@ -23,11 +23,38 @@
                 <input class="btn btn-primary" id="startBtn" type="button" value="Start" style="background-color:#f2c300; color:#0099f6;">
             </div>
         </div>
+        <div class="invisible" id="gameDone">
+            <div class="row">
+                <div class="col text-center txt2">
+                    <h3>All Done!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center txt1">
+                    <p>Correct Answers:
+                        <span id="win"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center txt1">
+                    <p>Wrong Answers:
+                        <span id="lose"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center txt1">
+                    <p>Unanswered:
+                        <span id="blank"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="invisible" id="triviaQuestions">
             <div class="row">
-
-                <div class="col text-center txt1">
-                    <h3>Time Remaining: <span id="time">28</span> second</h3>
+                <div class="col text-center txt2">
+                    <h3>Time Remaining: <span id="time">2:00</span></h3>
                 </div>
             </div>
             <div class="row">
@@ -337,33 +364,168 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col txt1">
+                    <p class="questionHeader" id="question11">
+                        11) On Voyager, how many children were born?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num51" name="num11" class="custom-control-input" value="3">
+                        <label class="custom-control-label" for="num51">3</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num52" name="num11" class="custom-control-input" value="2">
+                        <label class="custom-control-label" for="num52">2</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num53" name="num11" class="custom-control-input" value="7">
+                        <label class="custom-control-label" for="num53">7</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num54" name="num11" class="custom-control-input" value="4">
+                        <label class="custom-control-label" for="num54">4</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num55" name="num11" class="custom-control-input" value="1">
+                        <label class="custom-control-label" for="num55">1</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <p class="questionHeader" id="question12">
+                        12) Seven of Nine, Brought aboard Voyager in the Delta Quadrant as a Borg, was originally what race before assimilation?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num56" name="num12" class="custom-control-input" value="Romulan">
+                        <label class="custom-control-label" for="num56">Romulan</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num57" name="num12" class="custom-control-input" value="Cardassian">
+                        <label class="custom-control-label" for="num57">Cardassian</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num58" name="num12" class="custom-control-input" value="Human">
+                        <label class="custom-control-label" for="num58">Human</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num59" name="num12" class="custom-control-input" value="Xindi">
+                        <label class="custom-control-label" for="num59">Xindi</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num60" name="num12" class="custom-control-input" value="Talaxian">
+                        <label class="custom-control-label" for="num60">Talaxian</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <p class="questionHeader" id="question13">
+                        13) Species 8472 exist in what kind of space?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num61" name="num13" class="custom-control-input" value="Asteroidal">
+                        <label class="custom-control-label" for="num61">Asteroidal</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num62" name="num13" class="custom-control-input" value="Fluidic">
+                        <label class="custom-control-label" for="num62">Fluidic</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num63" name="num13" class="custom-control-input" value="Gaseous">
+                        <label class="custom-control-label" for="num63">Gaseous</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num64" name="num13" class="custom-control-input" value="Planetary">
+                        <label class="custom-control-label" for="num64">Planetary</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num65" name="num13" class="custom-control-input" value="Plasmic">
+                        <label class="custom-control-label" for="num65">Plasmic</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <p class="questionHeader" id="question14">
+                        14) The holographic doctor of Voyager was designed on Jupiter Station by Dr. Lewis Zimmerman, a holoengineer, without being given a name. After 33 long years, what name did the doctor finally select?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num66" name="num14" class="custom-control-input" value="Dr. Gibalt">
+                        <label class="custom-control-label" for="num66">Dr. Gibalt</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num67" name="num14" class="custom-control-input" value="Gary">
+                        <label class="custom-control-label" for="num67">Gary</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num68" name="num14" class="custom-control-input" value="Joe">
+                        <label class="custom-control-label" for="num68">Joe</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num69" name="num14" class="custom-control-input" value="Thomas">
+                        <label class="custom-control-label" for="num69">Thomas</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num70" name="num14" class="custom-control-input" value="Dr. Schwitzer">
+                        <label class="custom-control-label" for="num70">Dr. Schwitzer</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <p class="questionHeader" id="question15">
+                        15) The creator of data was:
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col txt1">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num71" name="num15" class="custom-control-input" value="Dr. Picardo">
+                        <label class="custom-control-label" for="num71">Dr. Picardo</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num72" name="num15" class="custom-control-input" value="Dr. Lewis Zimmermann">
+                        <label class="custom-control-label" for="num72">Dr. Lewis Zimmermann</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num73" name="num15" class="custom-control-input" value="Dr. Martin Luther King Jr.">
+                        <label class="custom-control-label" for="num73">Dr. Martin Luther King Jr.</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num74" name="num15" class="custom-control-input" value="Dr. Kavorkian">
+                        <label class="custom-control-label" for="num74">Dr. Kavorkian</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="num75" name="num15" class="custom-control-input" value="Dr. Noonian Soong">
+                        <label class="custom-control-label" for="num75">Dr. Noonian Soong</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col text-center">
                     <input class="btn btn-primary" id="submitBtn" type="button" value="Submit" style="background-color:#f2c300; color:#0099f6;">
                 </div>
             </div>
         </div>
     </div>
-    <div class="row invisible" id="gameDone">
-        <div class="col text-center">
-            <h3>All Done!</h3>
-        </div>
-        <div class="col text-center">
-            <p>Correct Answers:
-                <span id="win"></span>
-            </p>
-        </div>
-        <div class="col text-center">
-            <p>Wrong Answers:
-                <span id="lose"></span>
-            </p>
-        </div>
-        <div class="col text-center">
-            <p>Unanswered:
-                <span id="blank"></span>
-            </p>
-        </div>
-    </div>
-    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

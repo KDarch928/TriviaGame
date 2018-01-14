@@ -1,6 +1,6 @@
 console.log("test");
 
-var answers = ["Gene Roddenberry", "Rummaging through a debris field to salvage junk", "His Singing", "Enterprise D and the Star Gazer", "Water", "Being able to turn invisible", "Guinan", "Reginald Barclay", "James Tiberius Kirk", "Klingons"];
+var answers = ["Gene Roddenberry", "Rummaging through a debris field to salvage junk", "His Singing", "Enterprise D and the Star Gazer", "Water", "Being able to turn invisible", "Guinan", "Reginald Barclay", "James Tiberius Kirk", "Klingons", "3", "Human", "Fluidic", "Joe", "Dr. Noonian Soong"];
 var userAnswers = [];
 var win = 0;
 var lose = 0;
@@ -39,6 +39,16 @@ function addUserAnswerToUserAnswerArray(value) {
 
 }
 
+//display results
+function displayResultsScreen() {
+    $("#triviaQuestions").addClass("invisible");
+    $("#gameDone").removeClass("invisible");
+
+    $("#win").text(win);
+    $("#lose").text(lose);
+    $("#blank").text(unanswered);
+}
+
 $("#startBtn").on("click",function () {
     // console.log(this);
     $("#startScreen").addClass("invisible");
@@ -61,6 +71,7 @@ $(document).ready(function () {
         // addUserAnswerToUserAnswerArray(q2Val);
         //console.log($(this).val());
         checkAnswers();
+        displayResultsScreen();
 
     });
 });

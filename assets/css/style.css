@@ -17,6 +17,8 @@ body {
 
 .txt2 {
     color:#f2c300;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 .questionHeader {
@@ -31,8 +33,20 @@ body {
     margin: 0 auto;
     padding-top: 3%;
     padding-bottom: 3%;
-
-
 }
+
+#gameDone {
+    background: white;
+    opacity: 0.85;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.invisible {
+    display: none;
+}
+
 
 
