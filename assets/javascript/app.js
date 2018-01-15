@@ -71,7 +71,7 @@ $(document).ready(function () {
     //gametimer object
     var gameTimer = {
 
-        time: 60, //120
+        time: 300, //120
 
         start: function () {
 
